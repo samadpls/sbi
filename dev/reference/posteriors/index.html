@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -625,6 +625,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#sbi.inference.posteriors.mcmc_posterior.MCMCPosterior.__getstate__" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;__getstate__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#sbi.inference.posteriors.mcmc_posterior.MCMCPosterior.__init__" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;__init__
@@ -983,6 +992,11 @@ Specifically, this class offers the following functionality:<br/>
   leakage.<br/>
 - reject samples that lie outside of the prior bounds.<br/><br/>
 This class can not be used in combination with SNLE or SNRE.</p>
+
+
+
+
+
 
               <details class="quote">
                 <summary>Source code in <code>sbi/inference/posteriors/direct_posterior.py</code></summary>
@@ -1913,7 +1927,9 @@ This class can not be used in combination with SNLE or SNRE.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>prior</code></td>
+            <td>
+                <code>prior</code>
+            </td>
             <td>
                   <code><span title="torch.distributions.Distribution">Distribution</span></code>
             </td>
@@ -1927,7 +1943,9 @@ This class can not be used in combination with SNLE or SNRE.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>posterior_estimator</code></td>
+            <td>
+                <code>posterior_estimator</code>
+            </td>
             <td>
                   <code><a class="autorefs autorefs-internal" title="sbi.neural_nets.estimators.base.ConditionalDensityEstimator" href="../models/#sbi.neural_nets.estimators.ConditionalDensityEstimator">ConditionalDensityEstimator</a></code>
             </td>
@@ -1941,7 +1959,9 @@ This class can not be used in combination with SNLE or SNRE.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_sampling_batch_size</code></td>
+            <td>
+                <code>max_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -1956,7 +1976,9 @@ the proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>device</code></td>
+            <td>
+                <code>device</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -1971,7 +1993,9 @@ the proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x_shape</code></td>
+            <td>
+                <code>x_shape</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Size">Size</span>]</code>
             </td>
@@ -1985,7 +2009,9 @@ the proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>enable_transform</code></td>
+            <td>
+                <code>enable_transform</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -2138,7 +2164,9 @@ re-evaluate only whenever a new <code>x</code> is passed.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>num_rejection_samples</code></td>
+            <td>
+                <code>num_rejection_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -2152,7 +2180,9 @@ re-evaluate only whenever a new <code>x</code> is passed.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -2166,7 +2196,9 @@ re-evaluate only whenever a new <code>x</code> is passed.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>rejection_sampling_batch_size</code></td>
+            <td>
+                <code>rejection_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -2354,7 +2386,9 @@ re-evaluate only whenever a new <code>x</code> is passed.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>theta</code></td>
+            <td>
+                <code>theta</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -2368,7 +2402,9 @@ re-evaluate only whenever a new <code>x</code> is passed.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>norm_posterior</code></td>
+            <td>
+                <code>norm_posterior</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -2388,7 +2424,9 @@ need speedier but unnormalized log posterior estimates set here
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>track_gradients</code></td>
+            <td>
+                <code>track_gradients</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -2404,7 +2442,9 @@ consumption.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>leakage_correction_params</code></td>
+            <td>
+                <code>leakage_correction_params</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[dict]</code>
             </td>
@@ -2648,7 +2688,9 @@ These parameters only have an effect if <code>norm_posterior=True</code>.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>theta</code></td>
+            <td>
+                <code>theta</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -2662,7 +2704,9 @@ These parameters only have an effect if <code>norm_posterior=True</code>.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -2676,7 +2720,9 @@ These parameters only have an effect if <code>norm_posterior=True</code>.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>norm_posterior</code></td>
+            <td>
+                <code>norm_posterior</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -2696,7 +2742,9 @@ need speedier but unnormalized log posterior estimates set here
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>track_gradients</code></td>
+            <td>
+                <code>track_gradients</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -2712,7 +2760,9 @@ consumption.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>leakage_correction_params</code></td>
+            <td>
+                <code>leakage_correction_params</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[dict]</code>
             </td>
@@ -2946,7 +2996,9 @@ in unbounded space and transform the result back into bounded space.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -2960,7 +3012,9 @@ in unbounded space and transform the result back into bounded space.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_iter</code></td>
+            <td>
+                <code>num_iter</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -2975,7 +3029,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>learning_rate</code></td>
+            <td>
+                <code>learning_rate</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -2989,7 +3045,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_method</code></td>
+            <td>
+                <code>init_method</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -3006,7 +3064,9 @@ tensor, the tensor will be used as init locations.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_init_samples</code></td>
+            <td>
+                <code>num_init_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -3021,7 +3081,9 @@ evaluate the log-probability of all of them.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_to_optimize</code></td>
+            <td>
+                <code>num_to_optimize</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -3037,7 +3099,9 @@ for the optimization.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>save_best_every</code></td>
+            <td>
+                <code>save_best_every</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -3054,7 +3118,9 @@ Computing the best log-probability creates a significant overhead
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -3069,7 +3135,9 @@ posterior.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>force_update</code></td>
+            <td>
+                <code>force_update</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -3084,7 +3152,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>log_prob_kwargs</code></td>
+            <td>
+                <code>log_prob_kwargs</code>
+            </td>
             <td>
             </td>
             <td>
@@ -3288,7 +3358,9 @@ have a cached value.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -3304,7 +3376,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>sample_with</code></td>
+            <td>
+                <code>sample_with</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -3319,7 +3393,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -3482,7 +3558,9 @@ manner.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -3497,7 +3575,9 @@ given every observation.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -3512,7 +3592,9 @@ given every observation.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_sampling_batch_size</code></td>
+            <td>
+                <code>max_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -3526,7 +3608,9 @@ given every observation.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -3688,6 +3772,11 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
 estimating the normlalization constant with importance sampling. It also allows to
 perform importance sampling (with <code>.sample()</code>) and to draw approximate samples with
 sampling-importance-resampling (SIR) (with <code>.sir_sample()</code>)</p>
+
+
+
+
+
 
               <details class="quote">
                 <summary>Source code in <code>sbi/inference/posteriors/importance_posterior.py</code></summary>
@@ -4418,7 +4507,9 @@ sampling-importance-resampling (SIR) (with <code>.sir_sample()</code>)</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>potential_fn</code></td>
+            <td>
+                <code>potential_fn</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[<span title="typing.Callable">Callable</span>, <span title="sbi.inference.potentials.base_potential.BasePotential">BasePotential</span>]</code>
             </td>
@@ -4433,7 +4524,9 @@ sampling-importance-resampling (SIR) (with <code>.sir_sample()</code>)</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>proposal</code></td>
+            <td>
+                <code>proposal</code>
+            </td>
             <td>
                   <code><span title="typing.Any">Any</span></code>
             </td>
@@ -4447,7 +4540,9 @@ sampling-importance-resampling (SIR) (with <code>.sir_sample()</code>)</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>theta_transform</code></td>
+            <td>
+                <code>theta_transform</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="sbi.sbi_types.TorchTransform">TorchTransform</span>]</code>
             </td>
@@ -4462,7 +4557,9 @@ during but only when calling <code>.map()</code>.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>method</code></td>
+            <td>
+                <code>method</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -4480,7 +4577,9 @@ corresponding importance weights.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>oversampling_factor</code></td>
+            <td>
+                <code>oversampling_factor</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -4495,7 +4594,9 @@ selected based on its importance weight.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_sampling_batch_size</code></td>
+            <td>
+                <code>max_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -4510,7 +4611,9 @@ proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>device</code></td>
+            <td>
+                <code>device</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -4525,7 +4628,9 @@ None, <code>potential_fn.device</code> is used.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x_shape</code></td>
+            <td>
+                <code>x_shape</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Size">Size</span>]</code>
             </td>
@@ -4674,7 +4779,9 @@ None, <code>potential_fn.device</code> is used.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>num_samples</code></td>
+            <td>
+                <code>num_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -4688,7 +4795,9 @@ None, <code>potential_fn.device</code> is used.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>force_update</code></td>
+            <td>
+                <code>force_update</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -4809,7 +4918,9 @@ unchanged and have a cached value.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>theta</code></td>
+            <td>
+                <code>theta</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -4823,7 +4934,9 @@ unchanged and have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>track_gradients</code></td>
+            <td>
+                <code>track_gradients</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -4839,7 +4952,9 @@ consumption.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>normalization_constant_params</code></td>
+            <td>
+                <code>normalization_constant_params</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[dict]</code>
             </td>
@@ -5004,7 +5119,9 @@ in unbounded space and transform the result back into bounded space.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -5018,7 +5135,9 @@ in unbounded space and transform the result back into bounded space.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_iter</code></td>
+            <td>
+                <code>num_iter</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -5033,7 +5152,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>learning_rate</code></td>
+            <td>
+                <code>learning_rate</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -5047,7 +5168,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_method</code></td>
+            <td>
+                <code>init_method</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -5064,7 +5187,9 @@ tensor, the tensor will be used as init locations.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_init_samples</code></td>
+            <td>
+                <code>num_init_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -5079,7 +5204,9 @@ evaluate the log-probability of all of them.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_to_optimize</code></td>
+            <td>
+                <code>num_to_optimize</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -5095,7 +5222,9 @@ for the optimization.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>save_best_every</code></td>
+            <td>
+                <code>save_best_every</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -5112,7 +5241,9 @@ Computing the best log-probability creates a significant overhead
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -5127,7 +5258,9 @@ posterior.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>force_update</code></td>
+            <td>
+                <code>force_update</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -5142,7 +5275,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>log_prob_kwargs</code></td>
+            <td>
+                <code>log_prob_kwargs</code>
+            </td>
             <td>
             </td>
             <td>
@@ -5346,7 +5481,9 @@ have a cached value.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -5360,7 +5497,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -5374,7 +5513,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>method</code></td>
+            <td>
+                <code>method</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -5392,7 +5533,9 @@ corresponding importance weights.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>oversampling_factor</code></td>
+            <td>
+                <code>oversampling_factor</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -5407,7 +5550,9 @@ selected based on its importance weight.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_sampling_batch_size</code></td>
+            <td>
+                <code>max_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -5422,7 +5567,9 @@ proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -5570,6 +5717,11 @@ proposal at every iteration.</p>
         <p>Provides MCMC to sample from the posterior.<br/><br/>
 SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
 <code>MCMCPosterior</code> allows to sample from the posterior with MCMC.</p>
+
+
+
+
+
 
               <details class="quote">
                 <summary>Source code in <code>sbi/inference/posteriors/mcmc_posterior.py</code></summary>
@@ -6584,7 +6736,20 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
 <span class="normal">1047</span>
 <span class="normal">1048</span>
 <span class="normal">1049</span>
-<span class="normal">1050</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">MCMCPosterior</span><span class="p">(</span><span class="n">NeuralPosterior</span><span class="p">):</span>
+<span class="normal">1050</span>
+<span class="normal">1051</span>
+<span class="normal">1052</span>
+<span class="normal">1053</span>
+<span class="normal">1054</span>
+<span class="normal">1055</span>
+<span class="normal">1056</span>
+<span class="normal">1057</span>
+<span class="normal">1058</span>
+<span class="normal">1059</span>
+<span class="normal">1060</span>
+<span class="normal">1061</span>
+<span class="normal">1062</span>
+<span class="normal">1063</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">MCMCPosterior</span><span class="p">(</span><span class="n">NeuralPosterior</span><span class="p">):</span>
 <span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Provides MCMC to sample from the posterior.&lt;br/&gt;&lt;br/&gt;</span>
 <span class="sd">    SNLE or SNRE train neural networks to approximate the likelihood(-ratios).</span>
 <span class="sd">    `MCMCPosterior` allows to sample from the posterior with MCMC.</span>
@@ -7596,6 +7761,19 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
             <span class="p">})</span>
 
         <span class="k">return</span> <span class="n">inference_data</span>
+
+    <span class="k">def</span> <span class="nf">__getstate__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get state of MCMCPosterior.</span>
+
+<span class="sd">        Removes the posterior sampler from the state, as it may not be picklable.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict: State of MCMCPosterior.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">state</span><span class="p">[</span><span class="s2">&quot;_posterior_sampler&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="n">state</span>
 </code></pre></div></td></tr></table></div>
               </details>
 
@@ -7657,6 +7835,74 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
 <div class="doc doc-object doc-function">
 
 
+<h3 id="sbi.inference.posteriors.mcmc_posterior.MCMCPosterior.__getstate__" class="doc doc-heading">
+            <code class=" language-python"><span class="n">__getstate__</span><span class="p">()</span></code>
+
+<a href="#sbi.inference.posteriors.mcmc_posterior.MCMCPosterior.__getstate__" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get state of MCMCPosterior.</p>
+<p>Removes the posterior sampler from the state, as it may not be picklable.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>Dict</code></td>            <td>
+                  <code><span title="typing.Dict">Dict</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>State of MCMCPosterior.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>sbi/inference/posteriors/mcmc_posterior.py</code></summary>
+              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1052</span>
+<span class="normal">1053</span>
+<span class="normal">1054</span>
+<span class="normal">1055</span>
+<span class="normal">1056</span>
+<span class="normal">1057</span>
+<span class="normal">1058</span>
+<span class="normal">1059</span>
+<span class="normal">1060</span>
+<span class="normal">1061</span>
+<span class="normal">1062</span>
+<span class="normal">1063</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">__getstate__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get state of MCMCPosterior.</span>
+
+<span class="sd">    Removes the posterior sampler from the state, as it may not be picklable.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Dict: State of MCMCPosterior.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">state</span><span class="p">[</span><span class="s2">&quot;_posterior_sampler&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">state</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
 <h3 id="sbi.inference.posteriors.mcmc_posterior.MCMCPosterior.__init__" class="doc doc-heading">
             <code class=" language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">potential_fn</span><span class="p">,</span> <span class="n">proposal</span><span class="p">,</span> <span class="n">theta_transform</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;slice_np_vectorized&#39;</span><span class="p">,</span> <span class="n">thin</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">warmup_steps</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">num_chains</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">init_strategy</span><span class="o">=</span><span class="s1">&#39;resample&#39;</span><span class="p">,</span> <span class="n">init_strategy_parameters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_strategy_num_candidates</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_workers</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">mp_context</span><span class="o">=</span><span class="s1">&#39;spawn&#39;</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x_shape</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
@@ -7679,7 +7925,9 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>potential_fn</code></td>
+            <td>
+                <code>potential_fn</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[<span title="typing.Callable">Callable</span>, <span title="sbi.inference.potentials.base_potential.BasePotential">BasePotential</span>]</code>
             </td>
@@ -7694,7 +7942,9 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>proposal</code></td>
+            <td>
+                <code>proposal</code>
+            </td>
             <td>
                   <code><span title="typing.Any">Any</span></code>
             </td>
@@ -7708,7 +7958,9 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>theta_transform</code></td>
+            <td>
+                <code>theta_transform</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="sbi.sbi_types.TorchTransform">TorchTransform</span>]</code>
             </td>
@@ -7723,7 +7975,9 @@ Allows to perform MCMC in unconstrained space.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>method</code></td>
+            <td>
+                <code>method</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -7744,7 +7998,9 @@ likewise the samplers ending on <code>_pymc</code> are using PyMC.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>thin</code></td>
+            <td>
+                <code>thin</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -7758,7 +8014,9 @@ likewise the samplers ending on <code>_pymc</code> are using PyMC.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>warmup_steps</code></td>
+            <td>
+                <code>warmup_steps</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -7772,7 +8030,9 @@ likewise the samplers ending on <code>_pymc</code> are using PyMC.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_chains</code></td>
+            <td>
+                <code>num_chains</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -7787,7 +8047,9 @@ likewise the samplers ending on <code>_pymc</code> are using PyMC.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_strategy</code></td>
+            <td>
+                <code>init_strategy</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -7808,7 +8070,9 @@ uses <code>exp(potential_fn)</code> as weights.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_strategy_parameters</code></td>
+            <td>
+                <code>init_strategy_parameters</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="typing.Dict">Dict</span>[str, <span title="typing.Any">Any</span>]]</code>
             </td>
@@ -7825,7 +8089,9 @@ locations (internal default is <code>1000</code>), or <code>device</code>.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_strategy_num_candidates</code></td>
+            <td>
+                <code>init_strategy_num_candidates</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
@@ -7841,7 +8107,9 @@ locations (internal default is <code>1000</code>), or <code>device</code>.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_workers</code></td>
+            <td>
+                <code>num_workers</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -7855,7 +8123,9 @@ locations (internal default is <code>1000</code>), or <code>device</code>.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>mp_context</code></td>
+            <td>
+                <code>mp_context</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -7872,7 +8142,9 @@ faster than <code>"spawn"</code> but is only supported on POSIX-based systems
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>device</code></td>
+            <td>
+                <code>device</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -7887,7 +8159,9 @@ faster than <code>"spawn"</code> but is only supported on POSIX-based systems
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x_shape</code></td>
+            <td>
+                <code>x_shape</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Size">Size</span>]</code>
             </td>
@@ -8315,7 +8589,9 @@ sbi slice samplers, only the samples are added.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>theta</code></td>
+            <td>
+                <code>theta</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -8329,7 +8605,9 @@ sbi slice samplers, only the samples are added.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>track_gradients</code></td>
+            <td>
+                <code>track_gradients</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -8467,7 +8745,9 @@ in unbounded space and transform the result back into bounded space.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -8481,7 +8761,9 @@ in unbounded space and transform the result back into bounded space.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_iter</code></td>
+            <td>
+                <code>num_iter</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -8496,7 +8778,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>learning_rate</code></td>
+            <td>
+                <code>learning_rate</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -8510,7 +8794,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_method</code></td>
+            <td>
+                <code>init_method</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -8527,7 +8813,9 @@ tensor, the tensor will be used as init locations.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_init_samples</code></td>
+            <td>
+                <code>num_init_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -8542,7 +8830,9 @@ evaluate the log-probability of all of them.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_to_optimize</code></td>
+            <td>
+                <code>num_to_optimize</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -8558,7 +8848,9 @@ for the optimization.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>save_best_every</code></td>
+            <td>
+                <code>save_best_every</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -8575,7 +8867,9 @@ Computing the best log-probability creates a significant overhead
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -8590,7 +8884,9 @@ the posterior.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>force_update</code></td>
+            <td>
+                <code>force_update</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -8605,7 +8901,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>log_prob_kwargs</code></td>
+            <td>
+                <code>log_prob_kwargs</code>
+            </td>
             <td>
             </td>
             <td>
@@ -8811,7 +9109,9 @@ their default values.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -8827,7 +9127,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>mcmc_parameters</code></td>
+            <td>
+                <code>mcmc_parameters</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="typing.Dict">Dict</span>]</code>
             </td>
@@ -8842,7 +9144,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>mcmc_method</code></td>
+            <td>
+                <code>mcmc_method</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -8857,7 +9161,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>sample_with</code></td>
+            <td>
+                <code>sample_with</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -8872,7 +9178,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -9254,7 +9562,9 @@ their default values.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -9269,7 +9579,9 @@ given every observation.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -9285,7 +9597,9 @@ drawn.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>method</code></td>
+            <td>
+                <code>method</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -9299,7 +9613,9 @@ drawn.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>thin</code></td>
+            <td>
+                <code>thin</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
@@ -9313,7 +9629,9 @@ drawn.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>warmup_steps</code></td>
+            <td>
+                <code>warmup_steps</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
@@ -9327,7 +9645,9 @@ drawn.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_chains</code></td>
+            <td>
+                <code>num_chains</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
@@ -9341,7 +9661,9 @@ drawn.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_strategy</code></td>
+            <td>
+                <code>init_strategy</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -9355,7 +9677,9 @@ drawn.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_strategy_parameters</code></td>
+            <td>
+                <code>init_strategy_parameters</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="typing.Dict">Dict</span>[str, <span title="typing.Any">Any</span>]]</code>
             </td>
@@ -9370,7 +9694,9 @@ the init strategy.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_workers</code></td>
+            <td>
+                <code>num_workers</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
@@ -9385,7 +9711,9 @@ parameter generation and mcmc sampling.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>mp_context</code></td>
+            <td>
+                <code>mp_context</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -9399,7 +9727,9 @@ parameter generation and mcmc sampling.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -9763,7 +10093,9 @@ parameter generation and mcmc sampling.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>method</code></td>
+            <td>
+                <code>method</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -9858,6 +10190,11 @@ parameter generation and mcmc sampling.</p>
         <p>Provides rejection sampling to sample from the posterior.<br/><br/>
 SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
 <code>RejectionPosterior</code> allows to sample from the posterior with rejection sampling.</p>
+
+
+
+
+
 
               <details class="quote">
                 <summary>Source code in <code>sbi/inference/posteriors/rejection_posterior.py</code></summary>
@@ -10358,7 +10695,9 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>potential_fn</code></td>
+            <td>
+                <code>potential_fn</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[<span title="typing.Callable">Callable</span>, <span title="sbi.inference.potentials.base_potential.BasePotential">BasePotential</span>]</code>
             </td>
@@ -10373,7 +10712,9 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>proposal</code></td>
+            <td>
+                <code>proposal</code>
+            </td>
             <td>
                   <code><span title="typing.Any">Any</span></code>
             </td>
@@ -10387,7 +10728,9 @@ SNLE or SNRE train neural networks to approximate the likelihood(-ratios).
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>theta_transform</code></td>
+            <td>
+                <code>theta_transform</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="sbi.sbi_types.TorchTransform">TorchTransform</span>]</code>
             </td>
@@ -10402,7 +10745,9 @@ during but only when calling <code>.map()</code>.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_sampling_batch_size</code></td>
+            <td>
+                <code>max_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -10417,7 +10762,9 @@ the proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_samples_to_find_max</code></td>
+            <td>
+                <code>num_samples_to_find_max</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -10432,7 +10779,9 @@ maximum of the <code>potential_fn / proposal</code> ratio.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_iter_to_find_max</code></td>
+            <td>
+                <code>num_iter_to_find_max</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -10447,7 +10796,9 @@ maximum of the <code>potential_fn / proposal</code> ratio.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>m</code></td>
+            <td>
+                <code>m</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -10461,7 +10812,9 @@ maximum of the <code>potential_fn / proposal</code> ratio.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>device</code></td>
+            <td>
+                <code>device</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -10476,7 +10829,9 @@ maximum of the <code>potential_fn / proposal</code> ratio.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x_shape</code></td>
+            <td>
+                <code>x_shape</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Size">Size</span>]</code>
             </td>
@@ -10619,7 +10974,9 @@ maximum of the <code>potential_fn / proposal</code> ratio.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>theta</code></td>
+            <td>
+                <code>theta</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -10633,7 +10990,9 @@ maximum of the <code>potential_fn / proposal</code> ratio.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>track_gradients</code></td>
+            <td>
+                <code>track_gradients</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -10771,7 +11130,9 @@ in unbounded space and transform the result back into bounded space.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -10785,7 +11146,9 @@ in unbounded space and transform the result back into bounded space.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_iter</code></td>
+            <td>
+                <code>num_iter</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -10800,7 +11163,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>learning_rate</code></td>
+            <td>
+                <code>learning_rate</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -10814,7 +11179,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_method</code></td>
+            <td>
+                <code>init_method</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -10831,7 +11198,9 @@ tensor, the tensor will be used as init locations.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_init_samples</code></td>
+            <td>
+                <code>num_init_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -10846,7 +11215,9 @@ evaluate the log-probability of all of them.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_to_optimize</code></td>
+            <td>
+                <code>num_to_optimize</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -10862,7 +11233,9 @@ for the optimization.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>save_best_every</code></td>
+            <td>
+                <code>save_best_every</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -10879,7 +11252,9 @@ Computing the best log-probability creates a significant overhead
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -10894,7 +11269,9 @@ the posterior.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>force_update</code></td>
+            <td>
+                <code>force_update</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -10909,7 +11286,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>log_prob_kwargs</code></td>
+            <td>
+                <code>log_prob_kwargs</code>
+            </td>
             <td>
             </td>
             <td>
@@ -11113,7 +11492,9 @@ have a cached value.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -11129,7 +11510,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>sample_with</code></td>
+            <td>
+                <code>sample_with</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -11144,7 +11527,9 @@ samples and then reshape into the desired shape.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -11357,6 +11742,11 @@ is used to reject samples that lie outside of the prior bounds.</p>
 corrector.</p>
 <p>Log probabilities are obtained by calling the potential function, which in turn uses
 zuko probabilistic ODEs to compute the log-probability.</p>
+
+
+
+
+
 
               <details class="quote">
                 <summary>Source code in <code>sbi/inference/posteriors/score_posterior.py</code></summary>
@@ -12081,7 +12471,9 @@ zuko probabilistic ODEs to compute the log-probability.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>prior</code></td>
+            <td>
+                <code>prior</code>
+            </td>
             <td>
                   <code><span title="torch.distributions.Distribution">Distribution</span></code>
             </td>
@@ -12095,7 +12487,9 @@ zuko probabilistic ODEs to compute the log-probability.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>score_estimator</code></td>
+            <td>
+                <code>score_estimator</code>
+            </td>
             <td>
                   <code><span title="sbi.neural_nets.estimators.score_estimator.ConditionalScoreEstimator">ConditionalScoreEstimator</span></code>
             </td>
@@ -12109,7 +12503,9 @@ zuko probabilistic ODEs to compute the log-probability.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_sampling_batch_size</code></td>
+            <td>
+                <code>max_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -12124,7 +12520,9 @@ the proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>device</code></td>
+            <td>
+                <code>device</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -12139,7 +12537,9 @@ the proposal at every iteration.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>enable_transform</code></td>
+            <td>
+                <code>enable_transform</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -12155,7 +12555,9 @@ returned for <code>theta_transform</code>. True is not supported yet.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>sample_with</code></td>
+            <td>
+                <code>sample_with</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -12308,7 +12710,9 @@ sampler or the SDE-based sampler.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>theta</code></td>
+            <td>
+                <code>theta</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -12322,7 +12726,9 @@ sampler or the SDE-based sampler.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -12336,7 +12742,9 @@ sampler or the SDE-based sampler.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>track_gradients</code></td>
+            <td>
+                <code>track_gradients</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -12352,7 +12760,9 @@ consumption.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>atol</code></td>
+            <td>
+                <code>atol</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -12366,7 +12776,9 @@ consumption.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>rtol</code></td>
+            <td>
+                <code>rtol</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -12380,7 +12792,9 @@ consumption.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>exact</code></td>
+            <td>
+                <code>exact</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -12549,7 +12963,9 @@ in unbounded space and transform the result back into bounded space.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -12563,7 +12979,9 @@ in unbounded space and transform the result back into bounded space.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_iter</code></td>
+            <td>
+                <code>num_iter</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -12578,7 +12996,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_to_optimize</code></td>
+            <td>
+                <code>num_to_optimize</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -12594,7 +13014,9 @@ for the optimization.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>learning_rate</code></td>
+            <td>
+                <code>learning_rate</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -12608,7 +13030,9 @@ for the optimization.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_method</code></td>
+            <td>
+                <code>init_method</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -12625,7 +13049,9 @@ tensor, the tensor will be used as init locations.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_init_samples</code></td>
+            <td>
+                <code>num_init_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -12640,7 +13066,9 @@ evaluate the log-probability of all of them.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>save_best_every</code></td>
+            <td>
+                <code>save_best_every</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -12657,7 +13085,9 @@ Computing the best log-probability creates a significant overhead
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -12672,7 +13102,9 @@ the posterior.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>force_update</code></td>
+            <td>
+                <code>force_update</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -12879,7 +13311,9 @@ have a cached value.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -12893,7 +13327,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -12907,7 +13343,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>predictor</code></td>
+            <td>
+                <code>predictor</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="sbi.samplers.score.Predictor">Predictor</span>]</code>
             </td>
@@ -12923,7 +13361,9 @@ Currently, only <code>euler_maruyama</code> is implemented.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>corrector</code></td>
+            <td>
+                <code>corrector</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="typing.Union">Union</span>[str, <span title="sbi.samplers.score.Corrector">Corrector</span>]]</code>
             </td>
@@ -12938,7 +13378,9 @@ Currently, only <code>euler_maruyama</code> is implemented.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>predictor_params</code></td>
+            <td>
+                <code>predictor_params</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="typing.Dict">Dict</span>]</code>
             </td>
@@ -12952,7 +13394,9 @@ Currently, only <code>euler_maruyama</code> is implemented.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>corrector_params</code></td>
+            <td>
+                <code>corrector_params</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="typing.Dict">Dict</span>]</code>
             </td>
@@ -12966,7 +13410,9 @@ Currently, only <code>euler_maruyama</code> is implemented.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>steps</code></td>
+            <td>
+                <code>steps</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -12980,7 +13426,9 @@ Currently, only <code>euler_maruyama</code> is implemented.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>ts</code></td>
+            <td>
+                <code>ts</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Tensor">Tensor</span>]</code>
             </td>
@@ -12995,7 +13443,9 @@ linear grid between t_max and t_min is used.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_sampling_batch_size</code></td>
+            <td>
+                <code>max_sampling_batch_size</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -13009,7 +13459,9 @@ linear grid between t_max and t_min is used.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>sample_with</code></td>
+            <td>
+                <code>sample_with</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
@@ -13024,7 +13476,9 @@ linear grid between t_max and t_min is used.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -13199,7 +13653,9 @@ flow. This is implemented via the zuko library.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -13213,7 +13669,9 @@ flow. This is implemented via the zuko library.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -13340,6 +13798,11 @@ References:<br/>
 Deistler, Jakob Macke, 2022, <a href="https://openreview.net/forum?id=kZ0UYdhqkNY">https://openreview.net/forum?id=kZ0UYdhqkNY</a><br/>
 [2] Sequential Neural Posterior and Likelihood Approximation, Samuel Wiqvist, Jes
 Frellsen, Umberto Picchini, 2021, <a href="https://arxiv.org/abs/2102.06522">https://arxiv.org/abs/2102.06522</a></p>
+
+
+
+
+
 
               <details class="quote">
                 <summary>Source code in <code>sbi/inference/posteriors/vi_posterior.py</code></summary>
@@ -14637,7 +15100,9 @@ incompatible deep copying).</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>memo</code></td>
+            <td>
+                <code>memo</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="typing.Dict">Dict</span>]</code>
             </td>
@@ -14831,7 +15296,9 @@ due not support pickle protocols (e.g. due to local functions, etc.).</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>potential_fn</code></td>
+            <td>
+                <code>potential_fn</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[<span title="typing.Callable">Callable</span>, <span title="sbi.inference.potentials.base_potential.BasePotential">BasePotential</span>]</code>
             </td>
@@ -14846,7 +15313,9 @@ due not support pickle protocols (e.g. due to local functions, etc.).</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>prior</code></td>
+            <td>
+                <code>prior</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="sbi.sbi_types.TorchDistribution">TorchDistribution</span>]</code>
             </td>
@@ -14864,7 +15333,9 @@ from potential_fn or q, if this fails we raise an Error.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>q</code></td>
+            <td>
+                <code>q</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="sbi.sbi_types.PyroTransformedDistribution">PyroTransformedDistribution</span>, <a class="autorefs autorefs-internal" title="sbi.inference.posteriors.vi_posterior.VIPosterior" href="#sbi.inference.posteriors.vi_posterior.VIPosterior">VIPosterior</a>, <span title="typing.Callable">Callable</span>]</code>
             </td>
@@ -14889,7 +15360,9 @@ arguments will be copied from it (relevant for multi-round training).</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>theta_transform</code></td>
+            <td>
+                <code>theta_transform</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="sbi.sbi_types.TorchTransform">TorchTransform</span>]</code>
             </td>
@@ -14905,7 +15378,9 @@ that of the prior.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>vi_method</code></td>
+            <td>
+                <code>vi_method</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -14924,7 +15399,9 @@ typically cover all modes (<code>fKL</code>, <code>IW</code>, <code>alpha</code>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>device</code></td>
+            <td>
+                <code>device</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -14939,7 +15416,9 @@ that all other objects are also on this device.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>x_shape</code></td>
+            <td>
+                <code>x_shape</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="torch.Size">Size</span>]</code>
             </td>
@@ -14953,7 +15432,9 @@ that all other objects are also on this device.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>parameters</code></td>
+            <td>
+                <code>parameters</code>
+            </td>
             <td>
                   <code><span title="typing.Iterable">Iterable</span></code>
             </td>
@@ -14969,7 +15450,9 @@ attribute.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>modules</code></td>
+            <td>
+                <code>modules</code>
+            </td>
             <td>
                   <code><span title="typing.Iterable">Iterable</span></code>
             </td>
@@ -15202,7 +15685,9 @@ e.g. remains deep copy compatible.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>state_dict</code></td>
+            <td>
+                <code>state_dict</code>
+            </td>
             <td>
                   <code><span title="typing.Dict">Dict</span></code>
             </td>
@@ -15289,7 +15774,9 @@ whereas <code>psis</code> is more sensitive in distinguishing <code>very bad</co
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>quality_control_metric</code></td>
+            <td>
+                <code>quality_control_metric</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -15304,7 +15791,9 @@ prop, prop_prior].</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>N</code></td>
+            <td>
+                <code>N</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -15393,7 +15882,9 @@ prop, prop_prior].</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>theta</code></td>
+            <td>
+                <code>theta</code>
+            </td>
             <td>
                   <code><span title="torch.Tensor">Tensor</span></code>
             </td>
@@ -15407,7 +15898,9 @@ prop, prop_prior].</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>track_gradients</code></td>
+            <td>
+                <code>track_gradients</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -15543,7 +16036,9 @@ in unbounded space and transform the result back into bounded space.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="sbi.sbi_types.TorchTensor">TorchTensor</span>]</code>
             </td>
@@ -15557,7 +16052,9 @@ in unbounded space and transform the result back into bounded space.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_iter</code></td>
+            <td>
+                <code>num_iter</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -15572,7 +16069,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>learning_rate</code></td>
+            <td>
+                <code>learning_rate</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -15586,7 +16085,9 @@ to find the MAP.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>init_method</code></td>
+            <td>
+                <code>init_method</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="sbi.sbi_types.TorchTensor">TorchTensor</span>]</code>
             </td>
@@ -15603,7 +16104,9 @@ tensor, the tensor will be used as init locations.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_init_samples</code></td>
+            <td>
+                <code>num_init_samples</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -15618,7 +16121,9 @@ evaluate the log-probability of all of them.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>num_to_optimize</code></td>
+            <td>
+                <code>num_to_optimize</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -15634,7 +16139,9 @@ for the optimization.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>save_best_every</code></td>
+            <td>
+                <code>save_best_every</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -15651,7 +16158,9 @@ Computing the best log-probability creates a significant overhead
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bars</code></td>
+            <td>
+                <code>show_progress_bars</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -15666,7 +16175,9 @@ the posterior.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>force_update</code></td>
+            <td>
+                <code>force_update</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -15681,7 +16192,9 @@ have a cached value.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>log_prob_kwargs</code></td>
+            <td>
+                <code>log_prob_kwargs</code>
+            </td>
             <td>
             </td>
             <td>
@@ -15887,7 +16400,9 @@ have a cached value.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>sample_shape</code></td>
+            <td>
+                <code>sample_shape</code>
+            </td>
             <td>
                   <code><span title="sbi.sbi_types.Shape">Shape</span></code>
             </td>
@@ -16008,7 +16523,9 @@ if called.</p>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>q</code></td>
+            <td>
+                <code>q</code>
+            </td>
             <td>
                   <code><span title="typing.Union">Union</span>[str, <span title="sbi.sbi_types.PyroTransformedDistribution">PyroTransformedDistribution</span>, <a class="autorefs autorefs-internal" title="sbi.inference.posteriors.vi_posterior.VIPosterior" href="#sbi.inference.posteriors.vi_posterior.VIPosterior">VIPosterior</a>, <span title="typing.Callable">Callable</span>]</code>
             </td>
@@ -16035,7 +16552,9 @@ is already a <code>VIPosterior</code>, then the arguments will be copied from it
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>parameters</code></td>
+            <td>
+                <code>parameters</code>
+            </td>
             <td>
                   <code><span title="typing.Iterable">Iterable</span></code>
             </td>
@@ -16049,7 +16568,9 @@ is already a <code>VIPosterior</code>, then the arguments will be copied from it
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>modules</code></td>
+            <td>
+                <code>modules</code>
+            </td>
             <td>
                   <code><span title="typing.Iterable">Iterable</span></code>
             </td>
@@ -16250,7 +16771,9 @@ is already a <code>VIPosterior</code>, then the arguments will be copied from it
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>method</code></td>
+            <td>
+                <code>method</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -16346,7 +16869,9 @@ is already a <code>VIPosterior</code>, then the arguments will be copied from it
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code>x</code></td>
+            <td>
+                <code>x</code>
+            </td>
             <td>
                   <code><span title="typing.Optional">Optional</span>[<span title="sbi.sbi_types.TorchTensor">TorchTensor</span>]</code>
             </td>
@@ -16360,7 +16885,9 @@ is already a <code>VIPosterior</code>, then the arguments will be copied from it
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>n_particles</code></td>
+            <td>
+                <code>n_particles</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -16376,7 +16903,9 @@ estimates, but the computational cost per iteration increases.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>learning_rate</code></td>
+            <td>
+                <code>learning_rate</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -16390,7 +16919,9 @@ estimates, but the computational cost per iteration increases.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>gamma</code></td>
+            <td>
+                <code>gamma</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -16405,7 +16936,9 @@ scheduler.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>max_num_iters</code></td>
+            <td>
+                <code>max_num_iters</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -16419,7 +16952,9 @@ scheduler.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>min_num_iters</code></td>
+            <td>
+                <code>min_num_iters</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -16433,7 +16968,9 @@ scheduler.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>clip_value</code></td>
+            <td>
+                <code>clip_value</code>
+            </td>
             <td>
                   <code>float</code>
             </td>
@@ -16448,7 +16985,9 @@ values.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>warm_up_rounds</code></td>
+            <td>
+                <code>warm_up_rounds</code>
+            </td>
             <td>
                   <code>int</code>
             </td>
@@ -16462,7 +17001,9 @@ values.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>retrain_from_scratch</code></td>
+            <td>
+                <code>retrain_from_scratch</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -16476,7 +17017,9 @@ values.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>reset_optimizer</code></td>
+            <td>
+                <code>reset_optimizer</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -16490,7 +17033,9 @@ values.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>show_progress_bar</code></td>
+            <td>
+                <code>show_progress_bar</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -16504,7 +17049,9 @@ values.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>quality_control</code></td>
+            <td>
+                <code>quality_control</code>
+            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -16518,7 +17065,9 @@ values.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>quality_control_metric</code></td>
+            <td>
+                <code>quality_control_metric</code>
+            </td>
             <td>
                   <code>str</code>
             </td>
@@ -16532,7 +17081,9 @@ values.</p>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code>kwargs</code></td>
+            <td>
+                <code>kwargs</code>
+            </td>
             <td>
             </td>
             <td>
@@ -16944,10 +17495,10 @@ weight_transform: Callable applied to importance weights (only for fKL)</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       

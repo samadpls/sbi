@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -672,8 +672,9 @@
 </code></pre></div>
 
 <p>Next, we follow the sampler interface and create a potential_function. The observation in this example is <code>x_o=[1, 1, 1, 1]</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">potential_fn</span><span class="p">,</span> <span class="n">theta_transform</span> <span class="o">=</span> <span class="n">posterior_estimator_based_potential</span><span class="p">(</span>
-    <span class="n">posterior_estimator</span><span class="p">,</span> <span class="n">prior</span><span class="o">=</span><span class="n">prior</span><span class="p">,</span> <span class="n">x_o</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">x_o</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">potential_fn</span><span class="p">,</span> <span class="n">theta_transform</span> <span class="o">=</span> <span class="n">posterior_estimator_based_potential</span><span class="p">(</span>
+    <span class="n">posterior_estimator</span><span class="p">,</span> <span class="n">prior</span><span class="o">=</span><span class="n">prior</span><span class="p">,</span> <span class="n">x_o</span><span class="o">=</span><span class="n">x_o</span>
 <span class="p">)</span>
 </code></pre></div>
 <p>Now we want to build the conditional potential (please read through the tutorial <a href="https://sbi-dev.github.io/sbi/dev/tutorials/09_sampler_interface/">09_sampler_interface</a> for an explanation of potential functions). For this, we have to pass a <code>condition</code>. In our case, we want to condition the forth parameter on <span class="arithmatex">\(\theta_4=0.2\)</span>. Regardless of how many parameters one wants to condition on, in <code>sbi</code>, one has to pass a <code>condition</code> value for all parameters. The first three values will simply be ignored. We can tell the algorithm which parameters should be kept fixed and which ones should be sampled with the argument <code>dims_to_sample</code>.</p>
@@ -769,10 +770,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
